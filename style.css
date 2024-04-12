@@ -9,6 +9,7 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --cor-about-section: #EAF2FD;
 }
 
 body {
@@ -42,19 +43,67 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+.menu__header{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.menu__list__item:nth-child(1),
+.menu__list__item:nth-child(2),
+.menu__list__item:nth-child(3),
+.menu__list__item:nth-child(4),
+.menu__list__item:nth-child(5){
+   display: none;
 }
 
 /*Sección Title*/
 
 section.title{
+    padding: 0 16px;    
+    text-align: justify;
+}
+.title__bio{
+    font-size: 22px;
+}
+.title__subsection{
+    font-size: 14px;
+    font-weight: 400;    
+}
 
+.title__profile{
+    width: 98px;
+    border-radius: 50%;
+}
+.title__network{
+    display: flex;
+    padding: initial;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /*Sección About*/
 
 section.about{
+    background-color: var(--cor-about-section);
+    padding: 0 16px;
+}
 
+.about__title{
+    padding-top: 16px;
+    font-size: 22px;
+}
+.about__paragraph{
+    text-align: justify;
+    font-size: 14px;
+}
+.about__container img{
+    padding-bottom: 16px;
 }
 
 /*Sección Hobbies*/
@@ -95,8 +144,28 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 768px) {
 
 /* Menú */
-
+section.menu{
+    padding: 0 32px;
+}
 /*title*/
+section.title{
+    padding: 0 32px;
+}
+.title__div{
+    display: flex;  
+    justify-content: space-between;  
+}
+.title__profile{
+    width: 146px;
+    order: 2;
+}
+.title__container{
+    width: 524px;
+}
+/* About */
+section.about{
+    padding: 0 32px;
+}
 
 /*Skills*/
 
@@ -108,11 +177,24 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
+/*computer*/
+@media (min-width: 1280px) {
 
 /*Menu*/
+section.menu{
 
+}
+.menu__list__item:nth-child(1),
+.menu__list__item:nth-child(2),
+.menu__list__item:nth-child(3),
+.menu__list__item:nth-child(4),
+.menu__list__item:nth-child(5){
+   display: block;
+}
+.menu__list{    
+    display: flex;
+    gap: 32px;
+}
 /*Titulo*/
 
 /*Sección sobre mi*/
