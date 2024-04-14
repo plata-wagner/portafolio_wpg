@@ -199,14 +199,34 @@ section.menu{
     display: flex;
     gap: 32px;
 }
-/* About */
-.about__container{
-    max-width: 751px;
-}
 
 /*Titulo*/
 
+.title__profile{
+    width: 368px;
+}
+.title__container{
+    width: 751px;
+}
+.title__bio{
+    font-size: 52px;
+}
+.title__subsection{
+    font-size: 22px;
+}
+.title__network{
+    font-size: 16px;
+}
 /*Sección sobre mi*/
+.about__title{
+    font-size: 32px;
+}
+.about__paragraph{
+    font-size: 16px;
+}
+.about__container{
+    max-width: 751px;
+}
 
 /*Skills*/
 
