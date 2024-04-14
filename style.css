@@ -180,6 +180,10 @@ section.about{
 /*computer*/
 @media (min-width: 1280px) {
 
+.tudo{
+    max-width: 1440px;
+    margin: 0 auto;
+}    
 /*Menu*/
 section.menu{
 
@@ -195,6 +199,11 @@ section.menu{
     display: flex;
     gap: 32px;
 }
+/* About */
+.about__container{
+    max-width: 751px;
+}
+
 /*Titulo*/
 
 /*Sección sobre mi*/
