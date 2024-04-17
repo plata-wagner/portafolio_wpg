@@ -134,7 +134,23 @@ section.hobbies{
 /* Experiencia Académica*/
 
 section.academic{
-
+    background-color: #EAF2FD;
+    padding: 0 16px;    
+}
+.academic__title{
+    text-align: center;
+}
+.academic__courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.academic__courses__box{
+    flex-grow: 1;
+}
+.academic__courses__list{
+    padding: 0;
 }
 
 /* experiencia*/
@@ -194,6 +210,13 @@ section.about{
 /*Hobbies*/
 
 /*Formación Académica*/
+.academic__courses{
+    flex-direction: row;
+    gap: 16px;
+}
+.academic__courses__item__img img{
+    width: 100%;
+}
 
 /*Experiencia Profesional*/
 
