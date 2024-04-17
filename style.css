@@ -128,7 +128,7 @@ section.skills{
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+    padding: 0 16px;
 }
 
 /* Experiencia Académica*/
@@ -251,6 +251,13 @@ section.menu{
 }
 
 /*Skills*/
+.skills__line ul, .hobbies__line ul{
+    display: flex;
+    height: 80%;    
+    flex-direction: column;
+    justify-content: end;
+    
+}
 .skills__box, .hobbies__box{
     width: 176px;
     height: 174px;    
