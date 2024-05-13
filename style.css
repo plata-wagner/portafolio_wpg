@@ -10,6 +10,7 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
    --cor-about-section: #EAF2FD;
+   --cor-text-blue: #2A7AE4;
 }
 
 body {
@@ -156,15 +157,36 @@ section.academic{
 /* experiencia*/
 
 section.experience{
-
+    padding: 0 16px; 
+}
+.experience__box{
+    margin-bottom: 64px;
+}
+.experience__img{
+    width: 100%;
 }
 
+.experiencia__botao--repo, .experience__botao--demo{
+    border: 1px solid var(--cor-text-blue);
+    padding: 12px 16px;
+} 
+.experiencia__botao--repo{
+    color: var(--cor-text-blue);
+}  
+
+.experience__botao--demo{
+    background-color: var(--cor-text-blue);
+    color: #fff;
+
+}
 /*Contacto*/
 
 section.formcontato{
-
+    
 }
-
+.formcontato__img{
+    display: none;
+}
 /*footeer*/
 
 section.footer{
@@ -290,7 +312,19 @@ section.menu{
 /*Formación Académica*/
 
 /*Experiencia Profesional*/
-
+.experience__box{    
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.experience__img{
+    width: 752px;
+}
+.experience__box:nth-child(3),
+.experience__box:nth-child(5)
+{
+    flex-direction: row-reverse;
+}
  /*Contacto*/
 
 /*Footer*/
