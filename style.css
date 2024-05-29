@@ -3,7 +3,12 @@
 en las secciones señaladas */
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
-
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
@@ -182,10 +187,61 @@ section.experience{
 /*Contacto*/
 
 section.formcontato{
+    background-color: var(--cor-about-section);
+    
+    padding: 32px 16px; 
     
 }
 .formcontato__img{
     display: none;
+}
+.formcontato__form{
+    position: relative;      
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.formcontato__input--wrapper{
+    position: relative;
+    padding: 16px 8px;    
+    background-color: white;
+    box-shadow: 0px 4px #A2A2A2;
+}
+.formcontato__input, .formcontato__textarea{  
+    width: 100%;
+    display: block;   
+    border: none;
+}
+.formcontato__label{
+  position: absolute; 
+  top: 16px; 
+  left: 12px;
+  color: #A2A2A2;
+  pointer-events: none;
+  transform-origin: left center;
+  transition: transform 250ms;
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+}
+.formcontato__input:focus, .formcontato__textarea:focus{
+    outline: none;
+}
+.formcontato__input::placeholder, .formcontato__textarea::placeholder{
+        color: transparent;
+}
+/* .input:not(:placeholder-shown) + .label  */
+.formcontato__input:focus + .formcontato__label,
+.formcontato__input:not(:placeholder-shown) + .formcontato__label,
+.formcontato__textarea:focus + .formcontato__label,
+.formcontato__textarea:not(:placeholder-shown) + .formcontato__label{
+    transform: translateY(-100%) scale(0.75);
+}
+.formcontato__botao{
+    padding: 12px 16px;
+    width: fit-content;
+    background-color: var(--cor-text-blue);
+    color: #fff;
+    border: 1px solid var(--cor-text-blue);
 }
 /*footeer*/
 
@@ -326,7 +382,13 @@ section.menu{
     flex-direction: row-reverse;
 }
  /*Contacto*/
-
+ .formcontato__contacto{
+    display: flex;
+    gap: 16px;
+ }
+.formcontato__img{
+    display: block;
+}
 /*Footer*/
 
 }
