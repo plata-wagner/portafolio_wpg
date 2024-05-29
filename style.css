@@ -246,7 +246,8 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
-   
+    padding: 32px;   
+    text-align: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
@@ -385,6 +386,7 @@ section.menu{
  .formcontato__contacto{
     display: flex;
     gap: 16px;
+    
  }
 .formcontato__img{
     display: block;
